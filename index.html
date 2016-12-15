@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe-master.min.js"></script>
+  </head>
+  <body style="background: #333">
+  <a-scene>
+    <a-assets>
+      <a-asset-item id="m-obj" src="m/m.obj"></a-asset-item>
+      <a-asset-item id="m-mtl" src="m/m.mtl"></a-asset-item>
+      <a-asset-item id="enemy0-obj" src="a-blast-enemies/enemy0.obj"></a-asset-item>
+      <a-asset-item id="enemy0-mtl" src="a-blast-enemies/enemy0.mtl"></a-asset-item>
+      <a-asset-item id="enemy1-obj" src="a-blast-enemies/enemy1.obj"></a-asset-item>
+      <a-asset-item id="enemy1-mtl" src="a-blast-enemies/enemy1.mtl"></a-asset-item>
+      <a-asset-item id="enemy2-obj" src="a-blast-enemies/enemy2.obj"></a-asset-item>
+      <a-asset-item id="enemy2-mtl" src="a-blast-enemies/enemy2.mtl"></a-asset-item>
+      <a-asset-item id="enemy3-obj" src="a-blast-enemies/enemy3.obj"></a-asset-item>
+      <a-asset-item id="enemy3-mtl" src="a-blast-enemies/enemy3.mtl"></a-asset-item>
+      <a-asset-item id="platform-obj" src="a-blast-platform/platform.obj"></a-asset-item>
+      <a-asset-item id="platform-mtl" src="a-blast-platform/platform.mtl"></a-asset-item>
+      <a-asset-item id="gun-obj" src="a-blast-gun/gun.obj"></a-asset-item>
+      <a-asset-item id="gun-mtl" src="a-blast-gun/gun.mtl"></a-asset-item>
+      <a-asset-item id="a-painter-controller-obj" src="a-painter-controller/a-painter-controller.obj"></a-asset-item>
+      <a-asset-item id="a-painter-controller-mtl" src="a-painter-controller/a-painter-controller.mtl"></a-asset-item>
+    </a-assets>
+    
+    <a-entity position="0 -1 6">
+      <a-camera></a-camera>
+    </a-entity>
+
+    <a-entity obj-model="obj: #m-obj; mtl: #m-mtl"></a-entity>
+    <a-entity obj-model="obj: #enemy0-obj; mtl: #enemy0-mtl" position="-6 0 0"></a-entity>
+    <a-entity obj-model="obj: #enemy1-obj; mtl: #enemy1-mtl" position="-4.5 0 0"></a-entity>
+    <a-entity obj-model="obj: #enemy2-obj; mtl: #enemy2-mtl" position="-3 0 0"></a-entity>
+    <a-entity obj-model="obj: #enemy3-obj; mtl: #enemy3-mtl" position="-1.5 0 0"></a-entity>
+    <a-entity obj-model="obj: #platform-obj; mtl: #platform-mtl" position="0 -.6 0"></a-entity>
+    <a-entity obj-model="obj: #gun-obj; mtl: #gun-mtl" position="0 -.3 0"></a-entity>
+    <a-entity obj-model="obj: #a-painter-controller-obj; mtl: #a-painter-controller-mtl" position=".4 -.3 0"></a-entity>
+
+  </a-scene>
+  </body>
+</html>
